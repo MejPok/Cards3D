@@ -32,4 +32,13 @@ public class CardCounter : MonoBehaviour
         }
     }
 
+    public bool IsEveryCardOut(){
+        foreach(int i in hashMap.Values){
+            if(i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
